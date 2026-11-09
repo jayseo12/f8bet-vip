@@ -1111,8 +1111,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="top-section">
           <div class="hero-copy">
 
-            <!-- LOGO F8BET VIP -->
-            <img class="brand-logo-img" src="https://hamonline.nl/wp-content/uploads/2026/07/jun88-logo-1.webp" alt="F8BET VIP - Hệ Thống VIP F8BET Đẳng Cấp cho F8BET pro" id="f8betVipLogo" />
+    
+            <img class="brand-logo-img" src="https://peerenpartners.nl/wp-content/uploads/2026/03/logo-f8bet.webp" alt="F8BET VIP - Hệ Thống VIP F8BET Đẳng Cấp cho F8BET pro" id="f8betVipLogo" />
 
             <h1 class="eyebrow" id="heroEyebrow">VIP F8BET - HỆ THỐNG VIP F8BET &amp; ĐẶC QUYỀN F8BET VIP ĐỈNH CAO</h1>
 
@@ -1132,7 +1132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="hero-stage">
               <div class="circle-backdrop" aria-hidden="true"></div>
 
-              <img class="visual-image" src="https://hamonline.nl/wp-content/uploads/2026/08/nhan-qua-jun88.webp" alt="Ưu đãi VIP F8BET - Quà Tặng Vip F8BET" id="realVisualImg" />
+              <img class="visual-image" src="/images/vip-f8bet.webp" alt="Ưu đãi VIP F8BET - Quà Tặng Vip F8BET" id="realVisualImg" />
 
               <div class="gift"></div>
               <div class="gift right"></div>
@@ -1423,7 +1423,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }, 1500);
     }
 
-    // Xử lý nút Sao chép & Tự động điền Mã VIP F8BET
     function copyAndFill(codeText) {
       const tempInput = document.createElement("input");
       tempInput.value = codeText;
@@ -1432,24 +1431,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.execCommand("copy");
       document.body.removeChild(tempInput);
 
-      // Điền mã vào input
+ 
       const codeInput = document.getElementById('codeInputValue');
       codeInput.value = codeText;
       
-      // Cuộn lên form mượt mà
+
       document.getElementById('redeemFormWrapper').scrollIntoView({ behavior: 'smooth', block: 'center' });
-      
-      // Focus vào ô Tên Tài Khoản VIP
+   
       setTimeout(() => {
         document.getElementById('usernameInputValue').focus();
       }, 500);
 
-      // Hiển thị thông báo sao chép
+ 
       const msgBox = document.getElementById('statusMsg');
       msgBox.innerHTML = `✅ Đã sao chép mã đặc quyền F8BET VIP <strong>${codeText}</strong> và tự động điền vào khung!`;
       msgBox.classList.add('show');
       
-      // Ẩn thông báo sau 3 giây
+
       setTimeout(() => {
         msgBox.classList.remove('show');
       }, 3000);
